@@ -1,0 +1,57 @@
+/*
+Error: File to import not found or unreadable: layot/footer.scss.
+       Load path: /home/atzin/Escritorio/Personal/1era-Página-personal/stylesheets
+        on line 12 of /home/atzin/Escritorio/Personal/1era-Página-personal/stylesheets/index.scss
+
+7: @import "components/form.scss";
+8: @import "components/icons.scss";
+9: @import "helpers/functions.scss";
+10: @import "helpers/helpers.scss";
+11: @import "helpers/variables.scss";
+12: @import "layot/footer.scss";
+13: @import "layot/grid.scss";
+14: @import "layot/header.scss";
+15: @import "layot/sidebar.scss";
+16: @import "pages/contact.scss";
+17: @import "pages/home.scss";
+
+Backtrace:
+/home/atzin/Escritorio/Personal/1era-Página-personal/stylesheets/index.scss:12
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/share/koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/usr/share/koala/bin/sass:18:in `load'
+/usr/share/koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: layot/footer.scss.\A        Load path: /home/atzin/Escritorio/Personal/1era-Página-personal/stylesheets\A         on line 12 of /home/atzin/Escritorio/Personal/1era-Página-personal/stylesheets/index.scss\A \A 7: @import \"components/form.scss\";\A 8: @import \"components/icons.scss\";\A 9: @import \"helpers/functions.scss\";\A 10: @import \"helpers/helpers.scss\";\A 11: @import \"helpers/variables.scss\";\A 12: @import \"layot/footer.scss\";\A 13: @import \"layot/grid.scss\";\A 14: @import \"layot/header.scss\";\A 15: @import \"layot/sidebar.scss\";\A 16: @import \"pages/contact.scss\";\A 17: @import \"pages/home.scss\";"; }

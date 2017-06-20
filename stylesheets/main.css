@@ -1,0 +1,407 @@
+*{
+  padding: 0px;
+  margin:0px;
+  align-items: center;
+  justify-content: center;
+  line-height: 2em;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #6D8183;
+}
+a:hover{
+  color:#54B59C;
+}
+.ul{
+  color: gray;
+}
+li{
+    list-style: none;
+    color: gray;
+}
+h2{
+  margin: 10px;
+}
+h3{
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+}
+.box-shadow{
+  box-shadow: 5px 5px 5px #d3d3d3;
+}
+
+
+/*header mobile*/
+.imgNav{
+  background-image: url(../img/collage.jpg);
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+  height: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgNavIndex{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  color: black;
+  font-weight: bold;
+  height: 100px;
+  padding-bottom: 20px;
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+nav ul a li {
+  margin: 8px;
+  color: black;
+  font-size: 20px;
+}
+
+.itemHomeNav{
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+}
+.itemHomeNav:hover{
+  margin: 10px;
+  color: black;
+  font-size: 30px;
+}
+.itemHomeNavIndex {
+  color: gray;
+  font-size: 30px;
+  /*margin:5px;*/
+}
+.itemHomeNavIndex:hover {
+  color: black;
+}
+.logoEscandia{
+  width: 50px;
+  margin: 2px;
+}
+
+.containerItemsNavbarIndex ul{
+  width: 100%;
+  display: flex;
+  background-color: white;
+  margin: 5px;
+}
+
+.containerItemsNavbar ul{
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
+.effectMenuItems {
+  transition: 0.4s;
+  padding: 0 1px;
+  margin: 0 3px;
+}
+.effectMenuItems:hover {
+  background-color: #000;
+  color: white;
+  padding: 5px 5px;
+}
+.containerItemsNavbar ul li{
+  font-size: 11px;
+  font-weight: lighter;
+}
+.containerItemsNavbarIndex ul li{
+  font-size: 12.5px;
+  font-weight: lighter;
+}
+.containerItemsNavbarIndex ul li:hover{
+  color: gray;
+}
+.containerItemsNavbar ul li:hover{
+  color: white;
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+@media (min-width: 825px){
+  nav{
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .containerItemsNavbar ul li{
+    margin-left: 40px;
+    padding-right: 40px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .itemHomeNav{
+    margin: 10px;
+    color: white;
+    font-size: 60px;
+  }
+  .itemHomeNav:hover{
+      margin: 10px;
+      color: black;
+      font-size: 60px;
+  }
+  .itemHomeNavIndex{
+    margin: 10px;
+    color: gray;
+    font-size: 50px;
+  }
+  .containerItemsNavbarIndex ul li{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .containerItemsNavbarIndex ul li:hover{
+    color: gray;
+  }
+}
+
+
+/*Hero slide*/
+
+.heroContent{
+  width: 100%;
+}
+.heroSize{
+  width: 100%;
+}
+.buttonHeroSection{
+  justify-content: space-around;
+}
+.buttonHero{
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.animateFading{
+  animation:fading 10s infinite
+  }
+@keyframes fading{
+  0%{opacity:0}
+  50%{opacity:1}
+  100%{opacity:0}
+  }
+
+
+/*div slideBar mobile*/
+
+.slideBar{
+  flex-direction: row;
+  text-align: center;
+  /*margin-bottom: 100px;*/
+}
+.subContainerslideBar{
+  display: flex;
+}
+.subContainerslideBar img, .subContainerslideBar h2{
+  margin: 10px;
+}
+.iconArrow{
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 825px){
+  .titleFirstPage{
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .subContainerslideBar img, .subContainerslideBar h2{
+    margin: 15px;
+  }
+  .iconArrow{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*page 1 blog*/
+
+/*.slideBarBlog{
+  margin-top: 100px;
+}*/
+
+
+
+
+
+
+
+/*page 4 about*/
+
+.aboutMe{
+  margin: 10px;
+}
+.aboutMeContent{
+  margin: 10px;
+}
+.me{
+  text-align: center;
+}
+.photo{
+  width: 200px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects{
+  text-align: center;
+}
+.projectContent{
+  margin: 10px;
+}
+.projectPicture{
+  width: 100%;
+}
+
+.vanish:hover {
+  opacity: 0.30;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity border-radius 500ms;
+  border-radius: 10px;
+}
+.containerArticles{
+  margin: 30px;
+}
+
+.articleItem{
+  margin: 10px;
+  text-align: center;
+}
+.subContainerAarticles{
+  flex-direction: column;
+}
+.imgarticle{
+  width: 100%;
+}
+
+
+
+@media (min-width: 825px){
+  .projects{
+    display: flex;
+  }
+  .containerArticles{
+    display: flex;
+  }
+}
+
+
+
+/*page4 Contact mobile*/
+
+.socialNetworks{
+  margin: 10px;
+}
+.socialNetworks ul{
+  display: flex;
+  /*flex-direction: row;*/
+  /*justify-content: space-around;*/
+}
+.socialNetworks h3{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 825px){
+
+}
+
+
+
+
+/*footer*/
+
+footer{
+  background-image: url(../img/girl.jpg);
+  background-size: cover;
+  height: 100%;
+  color: white;
+  text-align: center;
+  /*justify-content: center;*/
+  width: 100%
+}
+
+.titleTextFooter{
+  text-align: center;
+}
+footer img{
+  width: 50px;
+}
+.containerBoxesSN{
+
+}
+
+.boxTwitter, .boxLinkedin, .boxGithub{
+  width: 220px;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+.inputFooterEmail{
+  color: blue;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 7px;
+  padding-right: 5px;
+}
+
+.buttonFooterEmail{
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.buttonFooterEmail:hover{
+  background-color: rgba(0, 0, 0, 0.7);;
+  color: white;
+  border-color: black;
+  border-radius: 3px;
+  border-radius: 3px;
+  border-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer p{
+  font-size: 12px;
+}
+
+@media (min-width: 825px){
+  .containerBoxesSN{
+    display: flex;
+  }
+}
