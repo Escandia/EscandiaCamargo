@@ -7,6 +7,7 @@
 }
 body{
   font-family: 'Raleway', sans-serif;
+  background-color: rgb(246,246,246);
 }
 a{
   text-decoration: none;
@@ -47,7 +48,7 @@ h3{
   justify-content: flex-end;
 }
 
-.imgNavIndex{
+.navIndex{
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
@@ -78,7 +79,6 @@ nav ul a li {
 .itemHomeNavIndex {
   color: gray;
   font-size: 30px;
-  /*margin:5px;*/
 }
 .itemHomeNavIndex:hover {
   color: black;
@@ -151,6 +151,7 @@ nav ul a li {
     font-size: 35px;
     font-weight: bold;
   }
+
   .itemHomeNav{
     margin: 10px;
     color: white;
@@ -178,12 +179,34 @@ nav ul a li {
 
 /*Hero slide*/
 
+
 .heroContent{
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .heroSize{
   width: 100%;
 }
+
+.titleName{
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  font-size: 65px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+.titleName2{
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  font-size: 67px;
+  color: gray;
+  text-align: center;
+}
+
 .buttonHeroSection{
   justify-content: space-around;
 }
@@ -339,13 +362,14 @@ nav ul a li {
 /*footer*/
 
 footer{
+  width: 100%;
   background-image: url(../img/girl.jpg);
   background-size: cover;
   height: 100%;
   color: white;
   text-align: center;
-  /*justify-content: center;*/
-  width: 100%
+  justify-content: center;
+  width: 100%;
 }
 
 .titleTextFooter{
@@ -355,14 +379,16 @@ footer img{
   width: 50px;
 }
 .containerBoxesSN{
-
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .boxTwitter, .boxLinkedin, .boxGithub{
-  width: 220px;
+  /*width: 220px;*/
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
   margin: 10px;
   padding-top: 10px;
 }
