@@ -363,7 +363,7 @@ nav ul a li {
 
 footer{
   width: 100%;
-  background-image: url(../img/girl.jpg);
+  background-image: url(../img/candy.jpg);
   background-size: cover;
   height: 100%;
   color: white;
@@ -429,5 +429,10 @@ footer p{
 @media (min-width: 825px){
   .containerBoxesSN{
     display: flex;
+  }
+  .boxTwitter, .boxLinkedin, .boxGithub{
+    padding-left: 10px;
+      padding-right: 30px;
+    padding-top: 10px;
   }
 }
