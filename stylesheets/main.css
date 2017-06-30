@@ -24,7 +24,7 @@ li{
     color: gray;
 }
 h2{
-  margin: 10px;
+  /*margin: 10px;*/
 }
 h3{
   font-size: 12px;
@@ -38,7 +38,8 @@ h3{
 
 /*header mobile*/
 .imgNav{
-  background-image: url(../img/collage.jpg);
+  /*background-image: url(../img/collage.jpg);*/
+  background-color: rgb(253,236,79);
   background-size: cover;
   color: black;
   font-weight: bold;
@@ -50,13 +51,14 @@ h3{
 
 .navIndex{
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
   font-weight: bold;
   height: 100px;
   padding-bottom: 20px;
-  z-index: 1;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -106,7 +108,7 @@ nav ul a li {
   margin: 0 3px;
 }
 .effectMenuItems:hover {
-  background-color: #000;
+  background-color: rgb(244,194,219);
   color: white;
   padding: 5px 5px;
 }
@@ -174,6 +176,9 @@ nav ul a li {
   .containerItemsNavbarIndex ul li:hover{
     color: gray;
   }
+  .navIndex{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 
@@ -184,6 +189,7 @@ nav ul a li {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 0px;
 }
 .heroSize{
   width: 100%;
@@ -324,7 +330,16 @@ nav ul a li {
   width: 100%;
 }
 
+.aboutPara2{
+  font-size: 18px;
+  font-weight: bold;
+}
 
+.aboutMeContent{
+  background-color: rgb(244,194,219);
+  margin: 0px;
+  padding: 10px;
+}
 
 @media (min-width: 825px){
   .projects{
@@ -342,11 +357,11 @@ nav ul a li {
 .socialNetworks{
   margin: 10px;
 }
+
 .socialNetworks ul{
   display: flex;
-  /*flex-direction: row;*/
-  /*justify-content: space-around;*/
 }
+
 .socialNetworks h3{
   display: flex;
   flex-direction: row;
@@ -359,11 +374,20 @@ nav ul a li {
 
 
 
+
+
+
+
+
+
+
+
 /*footer*/
 
 footer{
   width: 100%;
-  background-image: url(../img/candy.jpg);
+  background-image: url(../img/window.jpg);
+  background-color: rgb(244,194,219);
   background-size: cover;
   height: 100%;
   color: white;
@@ -375,9 +399,11 @@ footer{
 .titleTextFooter{
   text-align: center;
 }
+
 footer img{
   width: 50px;
 }
+
 .containerBoxesSN{
   align-items: center;
   text-align: center;
@@ -386,7 +412,6 @@ footer img{
 }
 
 .boxTwitter, .boxLinkedin, .boxGithub{
-  /*width: 220px;*/
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.7);
   margin: 10px;
