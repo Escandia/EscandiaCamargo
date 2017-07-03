@@ -443,10 +443,11 @@ nav ul a li {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 50%;
+  width: 60%;
   background-color: pink;
   padding: 10px;
   border-radius: 10px;
+  flex-direction: column;
 }
 
 .me{
@@ -454,7 +455,7 @@ nav ul a li {
 }
 
 .photo{
-  width: 200px;
+  width: 150px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -509,6 +510,9 @@ nav ul a li {
   .containerArticles{
     display: flex;
   }
+  .aboutMeContent{
+    flex-direction: row;
+  }
 }
 
 
@@ -551,7 +555,7 @@ nav ul a li {
   justify-content: center;
 }
 .slideBar p{
-  padding: 10px; 
+  padding: 10px;
 }
 
 /*footer*/
