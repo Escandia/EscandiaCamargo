@@ -1,45 +1,38 @@
-  var slideIndex = 1;
-  showDivs(slideIndex);
+var slideIndex = 1;
+showDivs(slideIndex);
 
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length} ;
+for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+
+
+
+
+  var myIndex = 0;
+  carousel();
+  function carousel() {
+      var imgSlide = document.getElementsByClassName("imageSlide");
+
+        for (var i = 0; i < imgSlide.length; i++) {
+           imgSlide[i].style.display = "none";
+      }
+
+      myIndex++;
+
+      if (myIndex > imgSlide.length){
+        myIndex = 1;
+      }
+      imgSlide[myIndex-1].style.display = "block";
+      setTimeout(carousel, 10000);
   }
-
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-      slideIndex = x.length
-    }
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-red", "");
-    }
-    x[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " w3-red";
-  }
-
-
-
-
-// hero
-
-var hamburger = document.getElementById('hamburgerIcon')
-.addEventListener("click", function event() {
-
-  if (event.click) {
-    document.getElementById(.click());
-    var itemsHeroMenu = document.querySelector('elementsHeroMenu')
-  )
-  }
-})

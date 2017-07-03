@@ -51,7 +51,6 @@ h3{
 
 /*header mobile*/
 .imgNav{
-  /*background-image: url(../img/collage.jpg);*/
   background-color: rgb(253,236,79);
   background-size: cover;
   color: black;
@@ -252,7 +251,6 @@ nav ul a li {
 .slideBar{
   flex-direction: row;
   text-align: center;
-  /*margin-bottom: 100px;*/
 }
 .subContainerslideBar{
   display: flex;
@@ -298,6 +296,10 @@ nav ul a li {
   margin:15px;
   padding: 10px;
   border-radius: 5px;
+}
+.subtitleIndex1{
+  width: 100%;
+  text-align: center;
 }
 
 .titleIndex3{
@@ -346,6 +348,8 @@ nav ul a li {
   bottom: 20px;
 }
 
+
+
 .aboutBox{
   width: 100%;
   display: flex;
@@ -356,6 +360,9 @@ nav ul a li {
 }
 
 .subAboutBoxIndex{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   width: 60%;
   background-color: pink;
   color: white;
@@ -365,6 +372,23 @@ nav ul a li {
   padding: 10px;
 }
 
+.PhraseIndex{
+  display: flex;
+  flex-direction: column;
+  margin:20px;
+  width: 100%;
+  text-align: center;
+}
+
+.PhraseIndex p{
+  width: 50%;
+  background-color: yellow;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 @media (min-width: 825px){
   .containerSlidesIndex{
@@ -376,12 +400,20 @@ nav ul a li {
   .slideSizeIndex{
     width: 50%;
   }
+  .subAboutBoxIndex{
+    flex-direction: row;
+  }
 }
 
 
 /*About*/
 
 .aboutMe{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 15px;
 }
@@ -390,9 +422,10 @@ nav ul a li {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 98%;
-  background-color: rgb(244,194,219);
+  width: 50%;
+  background-color: pink;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .me{
@@ -497,16 +530,13 @@ nav ul a li {
   justify-content: center;
 }
 
-
-
-
-
-
 /*footer*/
 
 footer{
   width: 100%;
-  background-image: url(../img/window.jpg);
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/girl.jpg);
   background-color: rgb(244,194,219);
   background-size: cover;
   height: 100%;
@@ -525,13 +555,13 @@ footer img{
 }
 
 .containerBoxesSN{
-  align-items: center;
   text-align: center;
-  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
 .boxTwitter, .boxLinkedin, .boxGithub{
+  text-align: center;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.7);
   margin: 10px;

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/main.css" />
   <link rel="icon" href="img/heart.png" />
-  <script src="" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -37,42 +37,21 @@
   </div>
 
 
-  <script>
-  var myIndex = 0;
-  carousel();
-  function carousel() {
-      var imgSlide = document.getElementsByClassName("imageSlide");
-
-        for (var i = 0; i < imgSlide.length; i++) {
-           imgSlide[i].style.display = "none";
-      }
-
-      myIndex++;
-
-      if (myIndex > imgSlide.length){
-        myIndex = 1;
-      }
-      imgSlide[myIndex-1].style.display = "block";
-      setTimeout(carousel, 10000);
-}
-</script>
-
-
 <div class="titlesIndex">
 
   <div class="titleIndex1 box-shadow">
     <h2 class="primaryColor">Front-end Development</h2>
-    <p>HTML, CSS, & JavaScript - there’s web standards and then there’s browsers,
-      and I know both.</p>
+    <p>HTML, CSS, & JavaScript they are standards needed to create a structured and stylized website.</p>
   </div>
 
   <div class="titleIndex2 box-shadow">
     <h2 class="primaryColor">Responsive Web Design</h2>
-    <p>I design websites that work across all devices. They’re fluid and adaptive,
-      just like my process.</p>
+    <p>A web design also needs to be adaptable, work on all devices, be fluid and be responsive.</p>
   </div>
 
 </div>
+
+  <p class="subtitleIndex1">I know how to combine them and create a beautiful website!</p>
 
 
 <div class="titleIndex5">
@@ -99,28 +78,12 @@
 
     </div>
 
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-        showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} ;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-        }
-    </script>
-
-
   </div>
+
+
+    <div class="PhraseIndex ">
+      <p class="box-shadow">"Any girl can be glamorous, all she has to do is write code" •Escandia Camargo•</p>
+    </div>
 
 
   <div class="aboutBox">
@@ -128,7 +91,7 @@
       <img class="aboutMe photo" src="img/carnet.jpg" alt="Photo Woman" width="280px">
       <p class="aboutMe">
         My name is Escandia Camargo and I'm a developper Front-End.
-        Programming gives you the power of <span class="italic">build</span> something from anything,
+        Programming gives you the power of build something from anything,
         and allows you analize a problem and find a solution in a racional way, it's funny and at the
         same time is a challenge, in teh same way be a woman in a field dominated by men.
        </p>
@@ -151,12 +114,12 @@
 
       <div class="boxLinkedin">
           <a href="https://es.linkedin.com/in/atzin-escandia-camargo" target="_blank"><img src="img/linkedin.png" alt="Logo de Linkedin "></a>
-          <p>Follow me in Twitter</p>
+          <p>Professional networking</p>
       </div>
 
       <div class="boxGithub">
           <a href="https://github.com/Escandia" target="_blank"><img src="img/github.png" alt="Logo github"></a>
-          <p>Follow me in Twitter</p>
+          <p>Let's have a look</p>
       </div>
       </div>
       <h3>Site designed & developed by Escandia Camargo</h3>
