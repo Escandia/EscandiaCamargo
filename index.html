@@ -82,45 +82,60 @@
 </div>
 
 
-<div class="titleIndex4">
-  <h2 class="secondaryColor">Projects</h2>
+  <div class="titleIndex4">
+    <h2 class="secondaryColor">Projects</h2>
 
 
-  <div class="containerSlidesIndex">
-    <img class="mySlides slideSizeIndex" src="img/appTablet.jpg">
-    <img class="mySlides slideSizeIndex" src="img/Charty.jpg">
-    <img class="mySlides slideSizeIndex" src="img/Java-daba-dooS.jpg">
-    <img class="mySlides slideSizeIndex" src="img/SmartTech.jpg">
+    <div class="containerSlidesIndex">
+      <img class="mySlides slideSizeIndex" src="img/appTablet.jpg">
+      <img class="mySlides slideSizeIndex" src="img/Charty.jpg">
+      <img class="mySlides slideSizeIndex" src="img/Java-daba-dooS.jpg">
+      <img class="mySlides slideSizeIndex" src="img/SmartTech.jpg">
 
-    <div class="arrowSlideIndex">
-      <button class=" buttonIndexAbout" onclick="plusDivs(-1)">&#10094;</button>
-      <button class=" buttonIndexAbout" onclick="plusDivs(+1)">&#10095;</button>
+      <div class="arrowSlideIndex">
+        <button class=" buttonIndexAbout" onclick="plusDivs(-1)">&#10094;</button>
+        <button class=" buttonIndexAbout" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+
     </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+        }
+    </script>
+
 
   </div>
 
-  <script>
-        var slideIndex = 1;
-      showDivs(slideIndex);
 
-      function plusDivs(n) {
-      showDivs(slideIndex += n);
-      }
-
-      function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-      }
-  </script>
+  <div class="aboutBox">
+    <div class="subAboutBoxIndex box-shadow">
+      <img class="aboutMe photo" src="img/carnet.jpg" alt="Photo Woman" width="280px">
+      <p class="aboutMe">
+        My name is Escandia Camargo and I'm a developper Front-End.
+        Programming gives you the power of <span class="italic">build</span> something from anything,
+        and allows you analize a problem and find a solution in a racional way, it's funny and at the
+        same time is a challenge, in teh same way be a woman in a field dominated by men.
+       </p>
+    </div>
+  </div>
 
 
-</div>
 
 
 <footer>

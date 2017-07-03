@@ -5,14 +5,17 @@
   justify-content: center;
   line-height: 2em;
 }
+
 body{
   font-family: 'Raleway', sans-serif;
   background-color: rgb(246,246,246);
 }
+
 a{
   text-decoration: none;
   color: #6D8183;
 }
+
 a:hover{
   color:#54B59C;
 }
@@ -328,6 +331,8 @@ nav ul a li {
 
 .slideSizeIndex{
   width: 100%;
+
+  border-radius: 40px;
 }
 .containerSlidesIndex{
   width: 100%;
@@ -341,12 +346,35 @@ nav ul a li {
   bottom: 20px;
 }
 
+.aboutBox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.subAboutBoxIndex{
+  width: 60%;
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin:20px;
+  padding: 10px;
+}
+
+
 @media (min-width: 825px){
+  .containerSlidesIndex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
   .slideSizeIndex{
     width: 50%;
-  }
-  .arrowSlideIndex{
-    margin-left: 45%;
   }
 }
 
