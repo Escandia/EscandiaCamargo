@@ -16,9 +16,6 @@ for (i = 0; i < x.length; i++) {
 x[slideIndex-1].style.display = "block";
 }
 
-
-
-
   var myIndex = 0;
   carousel();
   function carousel() {

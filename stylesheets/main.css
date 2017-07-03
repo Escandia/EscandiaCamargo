@@ -51,11 +51,12 @@ h3{
 
 /*header mobile*/
 .imgNav{
-  background-color: rgb(253,236,79);
+  background-image: url(../img/collage.jpg);
   background-size: cover;
   color: black;
   font-weight: bold;
-  height: 100px;
+  height: 30px;
+  padding-top: 10px;
   padding-bottom: 20px;
   display: flex;
   justify-content: flex-end;
@@ -68,10 +69,12 @@ h3{
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   font-weight: bold;
-  height: 100px;
+  height: 30px;
   padding-bottom: 20px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
 }
 
 nav ul a li {
@@ -82,12 +85,12 @@ nav ul a li {
 
 .itemHomeNav{
   margin: 10px;
-  color: white;
+  color: black;
   font-size: 30px;
 }
 .itemHomeNav:hover{
   margin: 10px;
-  color: black;
+  color: pink;
   font-size: 30px;
 }
 .itemHomeNavIndex {
@@ -98,8 +101,7 @@ nav ul a li {
   color: black;
 }
 .logoEscandia{
-  width: 50px;
-  margin: 2px;
+  display: none;
 }
 
 .containerItemsNavbarIndex ul{
@@ -168,12 +170,10 @@ nav ul a li {
 
   .itemHomeNav{
     margin: 10px;
-    color: white;
     font-size: 60px;
   }
   .itemHomeNav:hover{
       margin: 10px;
-      color: black;
       font-size: 60px;
   }
   .itemHomeNavIndex{
@@ -190,6 +190,15 @@ nav ul a li {
   }
   .navIndex{
     background-color: rgba(255, 255, 255, 0.5);
+    height: 100px;
+  }
+  .imgNav{
+    height: 100px;
+  }
+  .logoEscandia{
+    display: flex;
+    width: 50px;
+    margin: 2px;
   }
 }
 
@@ -211,7 +220,7 @@ nav ul a li {
   width: 100%;
   align-items: center;
   position: absolute;
-  font-size: 65px;
+  font-size: 35px;
   color: white;
   z-index: 1;
   text-align: center;
@@ -220,7 +229,7 @@ nav ul a li {
   width: 100%;
   align-items: center;
   position: absolute;
-  font-size: 67px;
+  font-size: 36px;
   color: gray;
   text-align: center;
 }
@@ -244,6 +253,18 @@ nav ul a li {
   50%{opacity:1}
   100%{opacity:0}
   }
+
+  @media (min-width: 825px){
+    .titleName{
+      font-size: 65px;
+    }
+    .titleName2{
+      font-size: 67px;
+    }
+  }
+
+
+
 
 
 /*div slideBar mobile*/
@@ -529,6 +550,9 @@ nav ul a li {
   display: flex;
   justify-content: center;
 }
+.slideBar p{
+  padding: 10px; 
+}
 
 /*footer*/
 
@@ -536,7 +560,7 @@ footer{
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url(../img/girl.jpg);
+  background-image: url(../img/window.jpg);
   background-color: rgb(244,194,219);
   background-size: cover;
   height: 100%;
