@@ -9,6 +9,7 @@
 body{
   font-family: 'Raleway', sans-serif;
   background-color: rgb(246,246,246);
+  color: gray;
 }
 
 a{
@@ -41,7 +42,7 @@ h3{
 }
 
 .secondaryColor{
-  color: pink;
+  color: black;
 }
 
 .tertiaryColor{
@@ -71,6 +72,7 @@ h3{
   font-weight: bold;
   height: 30px;
   padding-bottom: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -90,8 +92,8 @@ nav ul a li {
 }
 .itemHomeNav:hover{
   margin: 10px;
-  color: pink;
-  font-size: 30px;
+  color: gray;
+  font-size: 35px;
 }
 .itemHomeNavIndex {
   color: gray;
@@ -122,7 +124,7 @@ nav ul a li {
   margin: 0 3px;
 }
 .effectMenuItems:hover {
-  background-color: rgb(244,194,219);
+  background-color: black;
   color: white;
   padding: 5px 5px;
 }
@@ -140,21 +142,6 @@ nav ul a li {
 .containerItemsNavbar ul li:hover{
   color: white;
 }
-.fadeInDown {
-  animation-name: fadeInDown;
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 
 @media (min-width: 825px){
   nav{
@@ -174,7 +161,7 @@ nav ul a li {
   }
   .itemHomeNav:hover{
       margin: 10px;
-      font-size: 60px;
+      font-size: 65px;
   }
   .itemHomeNavIndex{
     margin: 10px;
@@ -190,7 +177,7 @@ nav ul a li {
   }
   .navIndex{
     background-color: rgba(255, 255, 255, 0.5);
-    height: 100px;
+    height: 65px;
   }
   .imgNav{
     height: 100px;
@@ -209,8 +196,11 @@ nav ul a li {
 .heroContent{
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-top: -15px;
   margin-bottom: 0px;
+  text-align: center;
 }
 .heroSize{
   width: 100%;
@@ -218,20 +208,16 @@ nav ul a li {
 
 .titleName{
   width: 100%;
-  align-items: center;
   position: absolute;
   font-size: 35px;
-  color: white;
-  z-index: 1;
-  text-align: center;
+  color: black;
 }
 .titleName2{
   width: 100%;
-  align-items: center;
   position: absolute;
-  font-size: 36px;
+  margin-top: 30px;
+  font-size: 20px;
   color: gray;
-  text-align: center;
 }
 
 .buttonHeroSection{
@@ -245,27 +231,16 @@ nav ul a li {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.animateFading{
-  animation:fading 10s infinite
-  }
-@keyframes fading{
-  0%{opacity:0}
-  50%{opacity:1}
-  100%{opacity:0}
-  }
 
   @media (min-width: 825px){
     .titleName{
       font-size: 65px;
     }
     .titleName2{
-      font-size: 67px;
+      font-size: 50px;
+      margin-top: 55px;
     }
   }
-
-
-
-
 
 /*div slideBar mobile*/
 
@@ -305,18 +280,14 @@ nav ul a li {
   text-align: center;
 }
 .titleIndex1{
-  background-color: pink;
   width: 50%;
   margin:15px;
   padding: 10px;
-  border-radius: 5px;
 }
 .titleIndex2{
-  background-color: pink;
   width: 50%;
   margin:15px;
   padding: 10px;
-  border-radius: 5px;
 }
 .subtitleIndex1{
   width: 100%;
@@ -343,6 +314,9 @@ nav ul a li {
 }
 
 .titleIndex4{
+
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -350,17 +324,21 @@ nav ul a li {
   text-align: center;
   margin: 15px;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 .slideSizeIndex{
-  width: 100%;
+  width: 70%;
 
   border-radius: 40px;
 }
 .containerSlidesIndex{
   width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .arrowSlideIndex{
@@ -378,19 +356,14 @@ nav ul a li {
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .subAboutBoxIndex{
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 60%;
-  background-color: pink;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  margin:20px;
-  padding: 10px;
+  margin: 20px;
 }
 
 .PhraseIndex{
@@ -444,9 +417,8 @@ nav ul a li {
   justify-content: center;
   text-align: center;
   width: 60%;
-  background-color: pink;
+  background-image: url(../img/twinkle.png);
   padding: 10px;
-  border-radius: 10px;
   flex-direction: column;
 }
 
@@ -564,13 +536,12 @@ footer{
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url(../img/window.jpg);
-  background-color: rgb(244,194,219);
-  background-size: cover;
+  background-image: url(../img/twinkle.png);
   height: 100%;
   color: white;
   text-align: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -588,41 +559,10 @@ footer img{
   width: 100%;
 }
 
-.boxTwitter, .boxLinkedin, .boxGithub{
-  text-align: center;
-  justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 10px;
-  padding-top: 10px;
-}
 
-.inputFooterEmail{
-  color: blue;
-  font-family: 'Raleway', sans-serif;
-  padding-left: 7px;
-  padding-right: 5px;
-}
-
-.buttonFooterEmail{
-  font-family: 'Raleway', sans-serif;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+.containerBoxesSN p{
+  font-size: 16px;
   font-weight: bold;
-  border-color: rgba(0, 0, 0, 0);
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.buttonFooterEmail:hover{
-  background-color: rgba(0, 0, 0, 0.7);;
-  color: white;
-  border-color: black;
-  border-radius: 3px;
-  border-radius: 3px;
-  border-color: black;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: 'Raleway', sans-serif;
 }
 
 footer p{
@@ -635,7 +575,7 @@ footer p{
   }
   .boxTwitter, .boxLinkedin, .boxGithub{
     padding-left: 10px;
-      padding-right: 30px;
+    padding-right: 30px;
     padding-top: 10px;
   }
 }
